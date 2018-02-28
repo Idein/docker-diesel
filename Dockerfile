@@ -5,4 +5,4 @@ ENV DIESEL_VERSION 1.1.0
 RUN apt-get update && apt-get install -y libpq-dev
 RUN cargo install diesel_cli --vers $DIESEL_VERSION --no-default-features --features postgres
 
-CMD ["diesel"]
+ENTRYPOINT ["diesel"]
